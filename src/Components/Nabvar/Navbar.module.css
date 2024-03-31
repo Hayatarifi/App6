@@ -1,6 +1,43 @@
 .bg {
-color:blue;
+background-color:#FFCCCC;
+color: #DB7093; 
+padding: 1rem 2rem;
+display: flex; 
+flex-wrap: wrap;
+justify-content: center;
+align-items: center; 
+  text-align: center;
 }
-.nav-link {
-  text-decoration: rgb(124, 25, 79) solid none;
+nav{
+  display: block;
+
+}
+nav ul{
+  display: flex;
+    align-items:center;
+    gap: 26px;
+    
+}
+li {
+  display: flex;
+  align-items: center;
+}
+.NavLink {
+  text-decoration: none;
+  color: inherit; 
+  margin-right: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out; 
+  font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+
+
+}
+.NavLink:hover {
+  color: #FFD700	;
+}
+ul{
+  list-style-type: none;
 }

@@ -12,7 +12,8 @@ const Home = () => {
   const getproducts = async () => {
     try {
       const { data } = await axios.get(
-        "https://ecommerce-node4-five.vercel.app"
+        "https://ecommerce-node4-five.vercel.app/categories"
+  
       );
       if (data.message == "success") {
         setCategories(data.categories);
@@ -30,7 +31,7 @@ const Home = () => {
     getproducts();
   }, []);
 
-  if (!loading) {
+  if (loading) {
     return <Loader />;
   }
 

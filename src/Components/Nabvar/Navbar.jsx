@@ -5,32 +5,33 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
+   
     <nav className={style.bg}>
       <div>
         <ul>
           <li>
-            <Link to="/signin" className="nav-link">
+            <Link to="/signin" className={style.NavLink}>
               Signin
             </Link>
           </li>
           <li>
-            <Link to="/signup" className="nav-link">
+            <Link to="/signup" className={style.NavLink}>
               Signup
             </Link>
           </li>
           <li>
-            <Link to="/Catergories" className="nav-link">
+            <Link to="/Catergories" className={style.NavLink}>
               Catergories
             </Link>
           </li>
 
           <li>
-            <Link to="/Products" className="nav-link">
+            <Link to="/Products" className={style.NavLink}>
               Products
             </Link>
           </li>
           <li>
-            <Link to="/Cart" className="nav-link">
+            <Link to="/Cart" className={style.NavLink}>
               Cart
             </Link>
           </li>
